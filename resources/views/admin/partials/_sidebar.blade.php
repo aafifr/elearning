@@ -11,9 +11,16 @@
       </li><!-- End Dashboard Nav -->
 
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#">
-          <i class="bi bi-user"></i>
+        <a class="nav-link collapsed" href="/admin/student">
+          <i class="bi bi-person"></i>
           <span>Student</span>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link collapsed" href="/admin/courses">
+          <i class="bi bi-layout-text-window-reverse"></i>
+          <span>Courses</span>
         </a>
       </li>
 
