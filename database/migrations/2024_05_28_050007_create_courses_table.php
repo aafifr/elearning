@@ -13,11 +13,9 @@ return new class extends Migration
     {
         Schema::create('courses', function (Blueprint $table) {
             $table->id();
-            $table->string('hari');
-            $table->time('waktu');
-            $table->string('ruang');
-            $table->string('matkul');
-            $table->string('dosen');
+            $table->string('name');
+            $table->string('category');
+            $table->string('description');
             $table->timestamps();
         });
     }

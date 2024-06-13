@@ -29,20 +29,16 @@ class CoursesController extends Controller
         // dd($request->all());
         // Validasi Request
         $request->validate([
-            'hari' => 'required',
-            'waktu' => 'required',
-            'ruang' => 'required',
-            'matkul' => 'required',
-            'dosen' => 'required',
+            'name' => 'required',
+            'category' => 'required',
+            'description' => 'required',
         ]);
 
         // Simpan ke Database
         Courses::create([
-            'hari' => $request->hari,
-            'waktu' => $request->waktu,
-            'ruang' => $request->ruang,
-            'matkul' => $request->matkul,
-            'dosen' => $request->dosen,
+            'name' => $request->name,
+            'category' => $request->category,
+            'description' => $request->description,
         ]);
 
         // kembalikan ke halaman student
@@ -66,20 +62,16 @@ class CoursesController extends Controller
 
         // Validasi Request
         $request->validate([
-            'hari' => 'required',
-            'waktu' => 'required',
-            'ruang' => 'required',
-            'matkul' => 'required',
-            'dosen' => 'required',
+            'name' => 'required',
+            'category' => 'required',
+            'description' => 'required',
         ]);
 
         // Simpan Perubahan
         $courses->update([
-            'hari' => $request->hari,
-            'waktu' => $request->waktu,
-            'ruang' => $request->ruang,
-            'matkul' => $request->matkul,
-            'dosen' => $request->dosen,
+            'name' => $request->name,
+            'category' => $request->category,
+            'description' => $request->description,
         ]);
 
          // kembalikan ke halaman courses
